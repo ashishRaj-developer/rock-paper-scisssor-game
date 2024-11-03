@@ -11,22 +11,22 @@ let obj = JSON.parse( localStorage.getItem("obj"))||{
 function pickRandomNumber(){
   randomNumber = Math.random();
     if (randomNumber >=0 && randomNumber < 1/3){
-      computerMoves= 'Rock';
+      computerMoves= 'rock';
     } else if (randomNumber >=1/3 && randomNumber < 2/3){
-      computerMoves = 'Paper';
+      computerMoves = 'paper';
     } else{
-      computerMoves = 'Scissors';
+      computerMoves = 'scissors';
     }
 }
 
 function playGame(playerMove){
   pickRandomNumber();
 
-  if (playerMove === 'Rock'){
+  if (playerMove === 'rock'){
 
-    if (computerMoves === 'Rock'){
+    if (computerMoves === 'rock'){
         Result = 'Tie';
-    } else if (computerMoves === 'Paper'){
+    } else if (computerMoves === 'paper'){
       Result = 'you Lose'
     } else{
       Result = 'You Win'
@@ -34,10 +34,10 @@ function playGame(playerMove){
 
   }
     
-  else if (playerMove === 'Paper'){
-    if (computerMoves === 'Paper'){
+  else if (playerMove === 'paper'){
+    if (computerMoves === 'paper'){
         Result = 'Tie';
-    } else if (computerMoves === 'Scissors'){
+    } else if (computerMoves === 'scissors'){
       Result = 'you Lose'
     } else{
       Result = 'You Win'
@@ -45,10 +45,10 @@ function playGame(playerMove){
 
   }
   
-  else if (playerMove === 'Scissors'){
-    if (computerMoves === 'Scissors'){
+  else if (playerMove === 'scissors'){
+    if (computerMoves === 'scissors'){
         Result = 'Tie';
-    } else if (computerMoves === 'Rock'){
+    } else if (computerMoves === 'rock'){
       Result = 'you Lose'
     } else{
       Result = 'You Win'
