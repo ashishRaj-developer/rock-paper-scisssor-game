@@ -1,0 +1,33 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+.heading{
+  font-size: 30px;
+  font-weight: bold;
+}
+.icon{
+  height: 50px;
+}
+.js-button{
+  background-color: transparent;
+  border: 3px solid white;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.js-results{
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.reset-button{
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
