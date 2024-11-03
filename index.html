@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>booleans</title>
+  <link rel="stylesheet" href="10-rock-paper-scissors.css">
+</head>
+<body style="text-align: center; margin-top: 50px;">
+  <p class="heading">Rock Paper Scissors</p>
+  <button  onclick="
+     playGame('Rock');
+
+  " class="js-button"> <img src="rock-emoji.png" class="icon"></button>
+  <button onclick="
+    
+    playGame('Paper');
+
+"class="js-button"><img src="paper-emoji.png" class="icon"></button>
+  <button  onclick="
+
+    playGame('Scissors');
+
+" class="js-button"><img src="scissors-emoji.png" class="icon"></button>
+
+<p class="js-results"></p>
+<p class="js-moves">
+</p>
+<p class="js-score" style="margin-top: 10px;"></p>
+
+<button onclick="
+  obj.wins = 0 
+  obj.Loss = 0
+  obj.Tie = 0
+  localStorage.removeItem('obj')
+  document.querySelector('.js-score').innerText = `Wins: ${obj.wins} Loss: ${obj.Loss} Tie: ${obj.Tie}`
+  document.querySelector('.js-results').innerText = ''
+  document.querySelector('.js-moves').innerText = ''
+" class="reset-button">Reset Score</button>
+
+  <script src="10-roc-paper-sisiors.js">
+    
+  </script>
+</body>
+</html>
